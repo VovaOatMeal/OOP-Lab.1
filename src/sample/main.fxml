@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="420.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <TableView fx:id="tableID" layoutY="38.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="382.0" prefWidth="768.0">
+            <columns>
+                <TableColumn fx:id="idCol" prefWidth="36.79998856782913" text="ID" />
+                <TableColumn fx:id="nameCol" prefWidth="166.3999900817871" text="Name" />
+                <TableColumn fx:id="capitalCol" prefWidth="134.40003967285156" text="Capital" />
+                <TableColumn fx:id="regionCol" prefWidth="211.199951171875" text="Region" />
+                <TableColumn fx:id="continentCol" prefWidth="152.00006103515625" text="Continent" />
+            <TableColumn fx:id="codeCol" prefWidth="63.5999755859375" text="Code" />
+            </columns>
+        </TableView>
+      <ButtonBar layoutX="142.0" prefHeight="38.0" prefWidth="464.0">
+        <buttons>
+              <Button fx:id="showButton" minWidth="34.0" mnemonicParsing="false" onAction="#showData" prefHeight="26.0" prefWidth="240.0" text="Показать" />
+          <Button fx:id="addRowButton" mnemonicParsing="false" onAction="#addWindow" text="Добавить" />
+            <Button fx:id="deleteRowButton" mnemonicParsing="false" onAction="#deleteWindow" text="Удалить" />
+              <Button fx:id="editRowButton" mnemonicParsing="false" onAction="#editWindow" prefHeight="26.0" prefWidth="206.0" text="Редактировать" />
+        </buttons>
+      </ButtonBar>
+    </children>
+</AnchorPane>
