@@ -1,4 +1,4 @@
-package sample;
+package sample.Controllers;
 
 import java.io.IOException;
 import java.net.URL;
@@ -20,6 +20,9 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import sample.Country;
+import sample.DBQueries;
+import sample.Main;
 
 import static sample.Main.*;
 import static sample.Main.countryArrayList;
@@ -78,7 +81,7 @@ public class Controller {
     @FXML
     public void editWindow(ActionEvent actionEvent) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/sample/updateRowWindow.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/sample/Views/updateRowWindow.fxml"));
             Stage stage = new Stage();
             Stage primaryStage = (Stage)((Node) actionEvent.getSource()).getScene().getWindow(); // accessing primaryStage from Main
             stage.initOwner(primaryStage); // setting which window will be locked
