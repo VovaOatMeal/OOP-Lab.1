@@ -62,4 +62,31 @@ public class DBQueries {
             return null;
         }
     }
+
+    public static void insertQuery(String Name, String Capital, String Region, String Continent, String Code) {
+        try {
+            final String QUERY = "INSERT INTO countries " +
+                    "(`Name`,\n" +
+                    "`Capital`,\n" +
+                    "`Region`,\n" +
+                    "`Continent`,\n" +
+                    "`Code`)\n" +
+                    "VALUES ('" + Name + "', '" + Capital + "', '" + Region + "', '" + Continent + "', '" + Code + "');";
+            Main.statement.executeUpdate(QUERY);
+        } catch (SQLException e) {
+            System.out.println(e.toString() +
+                    "\nHappened in insertQuery()");
+        }
+    }
+
+    public static void deleteQuery(int id) {
+        try {
+            final String QUERY = "DELETE FROM countries WHERE CountryID = " + id + ";";
+            Main.statement.executeUpdate(QUERY);
+        } catch (SQLException e) {
+            System.out.println(e.toString() +
+                    "\nHappened in deleteQuery()");
+        }
+
+    }
 }

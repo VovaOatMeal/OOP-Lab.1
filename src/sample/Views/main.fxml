@@ -11,11 +11,11 @@
         <TableView fx:id="tableID" layoutY="38.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="382.0" prefWidth="768.0">
             <columns>
                 <TableColumn fx:id="idCol" prefWidth="36.79998856782913" text="ID" />
-                <TableColumn fx:id="nameCol" prefWidth="166.3999900817871" text="Name" />
-                <TableColumn fx:id="capitalCol" prefWidth="134.40003967285156" text="Capital" />
-                <TableColumn fx:id="regionCol" prefWidth="211.199951171875" text="Region" />
-                <TableColumn fx:id="continentCol" prefWidth="152.00006103515625" text="Continent" />
-            <TableColumn fx:id="codeCol" prefWidth="63.5999755859375" text="Code" />
+                <TableColumn fx:id="nameCol" prefWidth="166.3999900817871" text="Название" />
+                <TableColumn fx:id="capitalCol" prefWidth="134.40003967285156" text="Столица" />
+                <TableColumn fx:id="regionCol" prefWidth="211.199951171875" text="Регион" />
+                <TableColumn fx:id="continentCol" prefWidth="152.00006103515625" text="Континент" />
+            <TableColumn fx:id="codeCol" prefWidth="63.5999755859375" text="Код" />
             </columns>
         </TableView>
       <ButtonBar layoutX="142.0" prefHeight="38.0" prefWidth="464.0">

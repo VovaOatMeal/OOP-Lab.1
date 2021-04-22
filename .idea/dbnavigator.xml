@@ -26,7 +26,7 @@
     <show-object-properties value="false" />
     <loaded-nodes>
       <connection connection-id="183e83b4-f3f0-4e01-9462-2f8cfae98518">
-        <schema name="oop_lab1_countries" object-types="table, view" />
+        <schema name="oop_lab1_countries" object-types="table, constraint, function, column, view, procedure, index, dataset trigger" />
       </connection>
     </loaded-nodes>
   </component>

@@ -70,11 +70,40 @@ public class Controller {
 
     @FXML
     void addWindow(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/sample/Views/addRowWindow.fxml"));
+            Stage stage = new Stage();
+            Stage primaryStage = (Stage)((Node) event.getSource()).getScene().getWindow(); // accessing primaryStage from Main
+            stage.initOwner(primaryStage); // setting which window will be locked
+            stage.initModality(Modality.WINDOW_MODAL); // making new stage modal
+            stage.setTitle("Добавление данных о стране");
+            stage.setScene(new Scene(root));
+            stage.showAndWait();
 
+            showData();
+
+        } catch (IOException | SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     void deleteWindow(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/sample/Views/deleteRowWindow.fxml"));
+            Stage stage = new Stage();
+            Stage primaryStage = (Stage)((Node) event.getSource()).getScene().getWindow(); // accessing primaryStage from Main
+            stage.initOwner(primaryStage); // setting which window will be locked
+            stage.initModality(Modality.WINDOW_MODAL); // making new stage modal
+            stage.setTitle("Удаление данных о стране");
+            stage.setScene(new Scene(root));
+            stage.showAndWait();
+
+            showData();
+
+        } catch (IOException | SQLException e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -86,7 +115,7 @@ public class Controller {
             Stage primaryStage = (Stage)((Node) actionEvent.getSource()).getScene().getWindow(); // accessing primaryStage from Main
             stage.initOwner(primaryStage); // setting which window will be locked
             stage.initModality(Modality.WINDOW_MODAL); // making new stage modal
-            stage.setTitle("Edit row");
+            stage.setTitle("Редактирование данных о стране");
             stage.setScene(new Scene(root));
             stage.showAndWait();
 

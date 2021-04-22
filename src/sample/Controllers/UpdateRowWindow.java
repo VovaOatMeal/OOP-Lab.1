@@ -54,7 +54,6 @@ public class UpdateRowWindow {
 
     @FXML
     void initialize() {
-
     }
 
     public void loadAction(ActionEvent actionEvent) {

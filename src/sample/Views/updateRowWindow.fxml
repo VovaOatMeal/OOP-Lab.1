@@ -11,7 +11,7 @@
     <children>
         <TextField fx:id="nameField" disable="true" layoutX="31.0" layoutY="172.0" />
         <TextField fx:id="capitalField" disable="true" layoutX="225.0" layoutY="172.0" />
-        <Label layoutX="176.0" layoutY="14.0" text="Введите новые данные">
+        <Label layoutX="174.0" layoutY="14.0" text="Редактирование данных">
             <font>
                 <Font size="24.0" />
             </font>
@@ -44,7 +44,7 @@
                 <Font size="14.0" />
             </font>
         </Label>
-        <Button fx:id="submitButton" disable="true" layoutX="222.0" layoutY="298.0" mnemonicParsing="false" onAction="#submitAction" text="Submit">
+        <Button fx:id="submitButton" disable="true" layoutX="221.0" layoutY="298.0" mnemonicParsing="false" onAction="#submitAction" text="Готово">
             <font>
                 <Font size="14.0" />
             </font>
@@ -55,7 +55,7 @@
             </font>
         </Label>
         <Button fx:id="loadButton" layoutX="501.0" layoutY="70.0" mnemonicParsing="false" onAction="#loadAction" text="Загрузить" />
-        <Button fx:id="cancelButton" layoutX="315.0" layoutY="298.0" mnemonicParsing="false" onAction="#cancelAction" text="Cancel">
+        <Button fx:id="cancelButton" layoutX="314.0" layoutY="298.0" mnemonicParsing="false" onAction="#cancelAction" text="Отмена">
             <font>
                 <Font size="14.0" />
             </font>
